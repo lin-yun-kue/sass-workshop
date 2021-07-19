@@ -1,0 +1,20 @@
+{
+  "name": "sass-imp",
+  "version": "1.0.0",
+  "description": "a sample for implement sass by gulp",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp --gulp-file gulpfile.js build-web",
+    "launch": "gulp --gulp-file gulpfile.js launch-web"
+  },
+  "author": "kyle_lin",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-changed": "^4.0.3",
+    "gulp-sass": "^5.0.0",
+    "gulp-watch": "^5.0.1",
+    "sass": "^1.35.2"
+  }
+}
