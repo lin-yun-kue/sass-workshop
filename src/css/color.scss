@@ -1,0 +1,12 @@
+$base-color: #00ff00;
+
+.body {
+    background-color: $base-color;
+    .darken {
+        background-color: darken($base-color, 20%);
+    }
+    .lighten {
+        background-color: lighten($base-color, 20%);
+    }
+}
+

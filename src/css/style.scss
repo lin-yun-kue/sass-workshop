@@ -1,11 +1,29 @@
-.top {
+@import "variable";
+@import "reset";
+
+.header {
     height: 100px;
     background-color: black;
+    font-size: $font-l;
     .logo {
         color: white;
         &:hover{
             cursor: pointer;
             color: blue;
         }
+    }
+}
+
+.body {
+    .content {
+        width: $container-width;
+        font-size: $font-m;
+    }
+}
+
+
+.footer {
+    .continaer {
+        width: $container-width;
     }
 }
