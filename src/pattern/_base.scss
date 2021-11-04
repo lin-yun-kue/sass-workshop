@@ -1,0 +1,45 @@
+// http://smacss.com/book/type-base
+
+// .header {
+//     a {
+//         color: red;
+//         &:hover {
+//             color: blue;
+//         }
+//     }
+//     img {
+//         max-width: 100%;
+//         height: auto;
+//     }
+// }
+// .content {
+//     a {
+//         color: red;
+//         &:hover {
+//             color: blue;
+//         }
+//     }
+//     img {
+//         max-width: 100%;
+//         height: auto;
+//     }
+// }
+// .footer {
+//     a {
+//         color: red;
+//         &:hover {
+//             color: blue;
+//         }
+//     }
+// }
+
+.a {
+    color: blue;
+    &:hover {
+        color: red;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
