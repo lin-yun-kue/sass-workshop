@@ -1,10 +1,15 @@
-@import "variable";
-@import "reset";
+// @import "partial/reset";
+// @import "partial/variable";
+
+@use "partial/reset";
+@use "partial/fonts";
+@use "partial/colors";
+@use "partial/layout";
 
 .header {
     height: 100px;
     background-color: black;
-    font-size: $font-l;
+    font-size: fonts.$font-l;
     .logo {
         color: white;
         &:hover{
@@ -16,14 +21,14 @@
 
 .body {
     .content {
-        width: $container-width;
-        font-size: $font-m;
+        width: layout.$container-width;
+        font-size: fonts.$font-m;
     }
 }
 
 
 .footer {
     .continaer {
-        width: $container-width;
+        width: layout.$container-width;
     }
 }
