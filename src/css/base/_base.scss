@@ -1,0 +1,5 @@
+@use "../utils/fonts";
+
+body {
+    font-family: fonts.$font-family;
+}

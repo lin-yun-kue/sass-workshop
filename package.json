@@ -4,8 +4,8 @@
   "description": "a sample for implement sass by gulp",
   "main": "index.js",
   "scripts": {
-    "build": "gulp --gulp-file gulpfile.js build-web",
-    "launch": "gulp --gulp-file gulpfile.js launch-web"
+    "build": "gulp --gulp-file gulpfile.js build",
+    "launch": "gulp --gulp-file gulpfile.js launch"
   },
   "author": "kyle_lin",
   "license": "ISC",
