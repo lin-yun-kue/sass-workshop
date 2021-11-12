@@ -1,5 +1,23 @@
-@use "../utils/fonts";
+@use "../utils/fonts" as f; 
+@use "../utils/colors" as c;
 
 body {
-    font-family: fonts.$font-family;
+    font-family: f.$font-family;
+    color: c.$text-color;
+}
+
+a {
+    &:hover {
+        color: c.$primary-color;
+    }
+}
+
+div, header, nav, main, footer {
+    box-sizing: border-box;
+}
+
+@each $name, $value in f.$font-sizes {
+    h#{$name} {
+        font-size: $value;
+    }
 }

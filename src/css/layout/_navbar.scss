@@ -1,0 +1,8 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    &__item {
+        display: flex;
+        flex-direction: row;
+    }
+}

@@ -1,1 +1,8 @@
-
+@mixin img-replace-text($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+}

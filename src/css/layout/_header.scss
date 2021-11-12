@@ -1,0 +1,10 @@
+@use "../utils/mixin" as m;
+
+.header {
+    display: flex;
+    &__logo {
+        @include m.img-replace-text("../img/logo.png");
+        width: 160px;
+        height: 90px;
+    }
+}

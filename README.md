@@ -2,7 +2,10 @@
 [Sass 7-1 Pattern](https://gist.github.com/rveitch/84cea9650092119527bc)
 
 ### Guidelines
-- don't use ID as CSS selector
+- Don't use ID as CSS selector
+- Define the JS hooks and don't select element by css class
+- Selector layer is better to lower than 4 layer in order to have efficiently rendering CSS
+- Use BEM Naming Rule
 
 ### Methodology Reference
 [SMACSS](http://smacss.com/)
