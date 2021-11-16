@@ -23,7 +23,7 @@ function moveFile() {
 }
 
 function launch() {
-    watch(["src/**/*.scss"], () => {
+    watch(["src/**/*.scss", "src/**/*.html", "src/img/**/*"], () => {
         build();
     })
     .on("change", e => console.log("Scss file changed: " + e))

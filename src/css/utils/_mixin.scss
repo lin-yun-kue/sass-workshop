@@ -6,3 +6,9 @@
     text-indent: 101%;
     white-space: nowrap;
 }
+
+@mixin img-fill($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

@@ -2,9 +2,33 @@
 
 .header {
     display: flex;
+    justify-content: space-between;
+    position: relative; // this setting is for navbar__menu as position anchor
     &__logo {
         @include m.img-replace-text("../img/logo.png");
         width: 160px;
         height: 90px;
+    }
+    &__iconbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 5%;
+        &__icon {
+            width: 22px;
+            height: 22px;
+        }
+        &__icon--like {
+            @include m.img-fill("../img/icon/like.png");
+            &:hover {
+                background-image: url("../img/icon/like--hover.png");
+            }
+        }
+        &__icon--faq {
+            @include m.img-fill("../img/icon/faq.png");
+            &:hover {
+                background-image: url("../img/icon/faq--hover.png");
+            }
+        }
     }
 }
