@@ -20,10 +20,12 @@ function moveFile() {
 
     const dest = "build";
     gulp.src("src/**/*.html").pipe(gulp.dest(dest));
+    gulp.src("src/**/*.css").pipe(gulp.dest(dest));
+    gulp.src("src/**/*.js").pipe(gulp.dest(dest));
 }
 
 function launch() {
-    watch(["src/**/*.scss", "src/**/*.html", "src/img/**/*"], () => {
+    watch(["src/**/*.scss", "src/**/*.html", "src/img/**/*", "src/**/*.js"], () => {
         build();
     })
     .on("change", e => console.log("Scss file changed: " + e))

@@ -4,6 +4,7 @@
         <meta name="description" content="sass-demo">
         <link rel="shortcut icon" href="">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/vendors/flickity.min.css">
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&amp;display=swap" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -70,9 +71,44 @@
                 </div>
         </header>
         <main>
-
+            <div class="banner">
+                <div class="js-carousel">
+                    <div class="carousel-cell">
+                        <div class="banner__img"></div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="banner__img"></div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="banner__img"></div>
+                    </div>
+                </div>
+                <div class="banner__search">
+                    <div class="banner__search__icon"></div>
+                    <input type="text" class="banner__search__input" placeholder="想要去哪裡">
+                    <button class="banner__search__btn">GO</button>
+                </div>
+            </div>
+            <div class="exp l-container--left">
+                <div class="exp__txtWrapper">
+                    <h1 class="exp__txtWrapper__title">Explore</h1>
+                    <h1 class="exp__txtWrapper__subTitle">探索台灣每個角落</h1>
+                    <h5 class="exp__txtWrapper__content">台灣擁有高山峽谷及四面環海地理特性，因此充滿各種自然景致等待人們發現，而各縣市有其特色文化與在地必嚐美食，無論想要來場山林陶冶身心之旅，抑或體驗歷史人文深度旅行，都能在台灣這片土地上踏尋。</h5>
+                </div>
+                <div class="exp__imgWrapper">
+                    <div class="exp__imgWrapper__img exp__imgWrapper__img--01"></div>
+                    <span class="exp__imgWrapper__txt">台東金剛大道</span>
+                    <div class="exp__imgWrapper__img exp__imgWrapper__img--02"></div>
+                    <span class="exp__imgWrapper__txt">南投日月潭文武廟</span>
+                    <div class="exp__imgWrapper__img exp__imgWrapper__img--03"></div>
+                    <span class="exp__imgWrapper__txt">基隆夜市</span>
+                </div>
+            </div>
+            
 
         </main>
         <footer></footer>
+        <script src="js/flickity.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
