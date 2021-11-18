@@ -56,8 +56,8 @@
             border-radius: 20px;
             border: 1px solid c.$primary-color;
             &:hover {
-                color: c.$hover-color;
-                border-color: c.$hover-color;
+                color: c.$sub-color;
+                border-color: c.$sub-color;
             }
         }
     }
@@ -65,17 +65,14 @@
 
 .exp {
     margin-top: 140px;
-    display: flex;
+    background-color: c.$background-color;
     &__txtWrapper {
-        width: 40%;
-        color: c.$title-color;
         line-height: f.$line-height-lg;
         &__title {
             color: c.$primary-color;
         }
     }
     &__imgWrapper {
-        width: 60%;
         display: flex;
         align-items: flex-start;
         &__img {
@@ -93,6 +90,19 @@
             &--03 {
                 @include m.img-fill("../img/index_explore/explore_03.jpeg")
             }
+            &--04 {
+                @include m.img-fill("../img/index_explore/explore_04.jpeg")
+            }
+            &--05 {
+                @include m.img-fill("../img/index_explore/explore_05.jpeg")
+            }
+            &--06 {
+                @include m.img-fill("../img/index_explore/explore_06.jpeg")
+            }
+            &--07 {
+                @include m.img-fill("../img/index_explore/explore_07.jpeg")
+            }
+            @include m.img-zoom(0.2s, 1.2);
         }
         &__txt {
             writing-mode: vertical-rl;

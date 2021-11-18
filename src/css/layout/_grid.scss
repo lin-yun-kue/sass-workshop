@@ -17,6 +17,7 @@
 .l-row {
     width: 100%;
     display: flex;
+    margin: 24 0;
 }
 
 @each $unit in v.$grid-divide-units {

@@ -1,4 +1,4 @@
-@use "../utils/colors" as v;
+@use "../utils/colors" as c;
 @use "../utils/mixin" as m;
 
 .navbar {
@@ -29,7 +29,7 @@
                 width: 8px;
                 height: 8px;
                 border-radius: 50%;
-                background-color: v.$hover-color;
+                background-color: c.$sub-color;
                 position: absolute;
                 top: 15px;
             }
@@ -44,7 +44,7 @@
         position: absolute;
         width: 100%;
         height: 150px;
-        background-color: white;
+        background-color: c.$background-color;
         opacity: 0.9;
         top: 80px;
         left: 0;
