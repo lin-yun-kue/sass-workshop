@@ -64,7 +64,7 @@
 }
 
 .exp {
-    margin-top: 140px;
+    padding: 140px 0;
     background-color: c.$background-color;
     &__txtWrapper {
         line-height: f.$line-height-lg;
@@ -108,6 +108,20 @@
             writing-mode: vertical-rl;
             text-orientation: upright;
             margin-left: 4px;
+        }
+    }
+}
+
+.part {
+    background: #FAFAFA;
+    padding: 120px 14% 120px 0;
+    &__img {
+        @include m.img-fill("../img/index_participate/participate_01.jpeg");
+    }
+    &__txtWrapper {
+        line-height: f.$line-height-lg;
+        &__title {
+            color: c.$primary-color;
         }
     }
 }
