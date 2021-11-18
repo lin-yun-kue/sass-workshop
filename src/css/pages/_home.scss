@@ -125,3 +125,63 @@
         }
     }
 }
+
+.enjoy {
+    padding: 140px 0;
+    &__txtWrapper {
+        line-height: f.$line-height-lg;
+        &__title {
+            color: c.$primary-color;
+        }
+    }
+    &__img {
+        width: 250px;
+        height: 375px;
+        margin-right: 24px;
+        &--01 {
+            @include m.img-fill("../img/index_enjoy/enjoy_01.jpeg");
+        }
+        &--02 {
+            @include m.img-fill("../img/index_enjoy/enjoy_02.jpeg");
+        }
+        &--03 {
+            @include m.img-fill("../img/index_enjoy/enjoy_03.jpeg");
+        }
+        &--04 {
+            @include m.img-fill("../img/index_enjoy/enjoy_04.jpeg");
+        }
+        &--05 {
+            @include m.img-fill("../img/index_enjoy/enjoy_05.jpeg");
+        }
+        &--06 {
+            @include m.img-fill("../img/index_enjoy/enjoy_06.jpeg");
+        }
+        &--07 {
+            @include m.img-fill("../img/index_enjoy/enjoy_07.jpeg");
+        }
+        &--08 {
+            @include m.img-fill("../img/index_enjoy/enjoy_08.jpeg");
+        }
+    }
+}
+
+.subscribe {
+    background-color: c.$primary-color;
+    padding: 140px 0;
+    &__img {
+        @include m.img-fill("../img/Subscribe.jpeg");
+        height: 300px;
+    }
+    &__txtWrapper {
+        line-height: f.$line-height-lg;
+        &__title {
+            color: c.$sub-color;
+        }
+        &__subTitle {
+            color: white;
+        }
+        &__content {
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+}
