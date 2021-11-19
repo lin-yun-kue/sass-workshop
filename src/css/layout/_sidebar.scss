@@ -1,0 +1,112 @@
+@use "../utils/variables" as v;
+@use "../utils/colors" as c;
+@use "../utils/fonts" as f;
+@use "../utils/mixin" as m;
+
+
+.sidebar {
+    width: v.$sidebar-width;
+    touch-action: pan-y;
+    height: 100%;
+    &__mainSearch {
+        padding: 24px;
+        border-bottom: 2px solid #c4c4c4;
+        &__title {
+            line-height: f.$line-height-lg;
+            font-weight: f.$font-weight-bolder;
+        }
+        &__list {
+            line-height: f.$line-height-sm;
+            padding-top: 1px;
+            &__item {
+                margin-top: 16px;
+                &--active {
+                    color: c.$primary-color;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &__filter {
+        padding: 24px;
+        &__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            line-height: f.$line-height-lg;
+            font-weight: f.$font-weight-bolder;
+            &__sub {
+                color: c.$primary-color;
+                font-size: 14px;
+                font-weight: f.$font-weight-normal;
+                cursor: pointer;
+            }
+        }
+        &__subTitle {
+            margin-top: 27px;
+        }
+        &__dropdown {
+            margin-top: 16px;
+            background: rgba(255, 255, 255, 0.9);
+            border: 0.5px solid #737373;
+            box-sizing: border-box;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px;
+            position: relative;
+            &__arrow {
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                @include m.img-fill("../img/icon/b-down.png")
+            
+            }
+            &__anchor {
+                display: none;
+            }
+            &__anchor:checked ~ .sidebar__filter__dropdown__arrow {
+                background-image: url("../img/icon/b-up.png");
+            }
+            &__anchor:checked ~ .sidebar__filter__dropdown__list {
+                height: auto;
+            }
+            &__list {
+                position: absolute;
+                top: 40px;
+                height: 0px;
+                overflow: hidden;
+                width: 101%;
+                z-index: 999;
+                background-color: white;
+                &__item {
+                    text-align: center;
+                    margin-top: 7px;
+                    padding-bottom: 7px;
+                    border-bottom: 1px solid #c4c4c4;
+                    &:hover {
+                        color: c.$primary-color;
+                    }
+                }
+            }
+        }
+        &__list {
+            font-size: 16px;
+            &__item {
+                margin-top: 16px;
+                border-radius: 50px;
+                border: 1px solid #737373;
+                padding: 4px 0;
+                text-align: center;
+                &:hover {
+                    background-color: c.$primary-color;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

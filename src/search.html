@@ -70,158 +70,62 @@
                     <div class="header__iconbar__icon header__iconbar__icon--faq"></div> 
                 </div>
         </header>
-        <main>
-            <div class="banner">
-                <div class="js-banner-carousel">
-                    <div class="carousel-cell">
-                        <div class="banner__img"></div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="banner__img"></div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="banner__img"></div>
-                    </div>
-                </div>
-                <div class="banner__search">
-                    <div class="banner__search__icon"></div>
-                    <input type="text" class="banner__search__input" placeholder="想要去哪裡">
-                    <button class="banner__search__btn">GO</button>
-                </div>
-            </div>
-            <div class="exp l-container">
-                <div class="l-row">
-                    <div class="exp__txtWrapper l-4-10">
-                        <h1 class="exp__txtWrapper__title">Explore</h1>
-                        <h1 class="exp__txtWrapper__subTitle">探索台灣每個角落</h1>
-                        <h5 class="exp__txtWrapper__content">台灣擁有高山峽谷及四面環海地理特性，因此充滿各種自然景致等待人們發現，而各縣市有其特色文化與在地必嚐美食，無論想要來場山林陶冶身心之旅，抑或體驗歷史人文深度旅行，都能在台灣這片土地上踏尋。</h5>
-                    </div>
-                    <div class="exp__imgWrapper l-6-10">
-                        <div class="exp__imgWrapper__img exp__imgWrapper__img--01"></div>
-                        <span class="exp__imgWrapper__txt">台東金剛大道</span>
-                        <div class="exp__imgWrapper__img exp__imgWrapper__img--02"></div>
-                        <span class="exp__imgWrapper__txt">南投日月潭文武廟</span>
-                        <div class="exp__imgWrapper__img exp__imgWrapper__img--03"></div>
-                        <span class="exp__imgWrapper__txt">基隆夜市</span>
-                    </div>
-                </div>
-                <div class="l-row">
-                    <div class="exp__menuWrapper l-2-12">
-                        <ul class="menuList">
-                            <li class="menuList__item">都市文情：北台灣</li>
-                            <li class="menuList__item">休閒樂活：中台灣</;>
-                            <li class="menuList__item">人情小吃：南台灣</li>
-                            <li class="menuList__item">自然生態：東台灣</li>
-                            <li class="menuList__item">小島風情：離島地區</;>
+        <div class="l-content l-container">
+            <aside class="sidebar">
+                <div class="sidebar__mainSearch">
+                    <h5 class="sidebar__mainSearch__title">你正在搜尋</h5>
+                    <ul class="sidebar__mainSearch__list">
+                        <li class="sidebar__mainSearch__list__item sidebar__mainSearch__list__item--active">景點</li>
+                        <li class="sidebar__mainSearch__list__item">美食</li>
+                        <li class="sidebar__mainSearch__list__item">活動</li>
+                    </ul>
+                </div> 
+                <div class="sidebar__filter">
+                    <h5 class="sidebar__filter__title">縮小搜尋範圍<span class="sidebar__filter__title__sub">清除條件</span></h5>
+                    <h6 class="sidebar__filter__subTitle">地理區域</h6>
+                    <div class="sidebar__filter__dropdown">
+                        <h6 class="sidebar__filter__dropdown__value">縣市地區</h6>
+                        <input class="sidebar__filter__dropdown__anchor" type="checkbox" id="anchor">
+                        <label class="sidebar__filter__dropdown__arrow" for="anchor"></label>
+                        <ul class="sidebar__filter__dropdown__list">
+                            <li class="sidebar__filter__dropdown__list__item">台北</li>
+                            <li class="sidebar__filter__dropdown__list__item">台中</li>
+                            <li class="sidebar__filter__dropdown__list__item">台南</li>
+                            <li class="sidebar__filter__dropdown__list__item">高雄</li>
                         </ul>
                     </div>
-                    <div class="exp__imgWrapper l-10-12">
-                        <div class="exp__imgWrapper__img exp__imgWrapper__img--04"></div>
-                        <span class="exp__imgWrapper__txt">南投合歡山</span>
-                        <div class="exp__imgWrapper__img exp__imgWrapper__img--05"></div>
-                        <span class="exp__imgWrapper__txt">北投圖書館</span>
-                        <div class="exp__imgWrapper__img exp__imgWrapper__img--06"></div>
-                        <span class="exp__imgWrapper__txt">樹林三角埔頂山步道</span>
-                        <div class="exp__imgWrapper__img exp__imgWrapper__img--07"></div>
-                        <span class="exp__imgWrapper__txt">水里車埕車站</span>
-                    </div>
+                    <h6 class="sidebar__filter__subTitle">景點主題</h6>
+                    <ul class="sidebar__filter__list">
+                        <li class="sidebar__filter__list__item">花海漫遊</li>
+                        <li class="sidebar__filter__list__item">水上活動</li>
+                        <li class="sidebar__filter__list__item">星空露營</li>
+                        <li class="sidebar__filter__list__item">溫泉湯屋</li>
+                        <li class="sidebar__filter__list__item">親子同遊</li>
+                        <li class="sidebar__filter__list__item">歷史文化</li>
+                    </ul>
                 </div>
-            </div>
-            <div class="part">
-                <div class="l-row">
-                    <div class="part__img l-6-12"></div>
-                    <div class="l-1-12"></div>
-                    <div class="l-5-12">
-                        <div class="part__txtWrapper">
-                            <h1 class="part__txtWrapper__title">Participate</h1>
-                            <h1 class="part__txtWrapper__subTitle">參與四季的更迭</h1>
-                            <h5 class="part__txtWrapper__content">根據季節的熱門活動主題，邀請你一同享受旅行中的每一個時刻。</h5>
-                        </div>
-                        <div class="part__menuWrapper">
-                            <ul class="menuList">
-                                <li class="menuList__item">初春花海漫遊</li>
-                                <li class="menuList__item">豔夏水上活動</li>
-                                <li class="menuList__item">微秋星空露營</li>
-                                <li class="menuList__item">寒冬暖心溫泉</li>
-                            </ul>
-                        </div>
+            </aside>
+            <main class="searchMain">
+                
+            </main>
+        </div>
+        <footer class="footer">
+            <div class="footer__wrapper l-container">
+                    <div class="footer__wrapper__iconbar">
+                        <span class="footer__wrapper__iconbar__txt">Follow us</span>
+                        <div class="footer__wrapper__iconbar__item footer__wrapper__iconbar__item--meta"></div>
+                        <div class="footer__wrapper__iconbar__item footer__wrapper__iconbar__item--ig"></div>
+                        <div class="footer__wrapper__iconbar__item footer__wrapper__iconbar__item--yt"></div>
                     </div>
-                </div>
-            </div>
-            <div class="enjoy">
-                <div class="enjoy__txtWrapper l-container">
-                    <div class="l-row">
-                        <div class="l-4-10">
-                            <h1 class="enjoy__txtWrapper__title">Explore</h1>
-                            <h1 class="enjoy__txtWrapper__subTitle">探索台灣每個角落</h1>
-                        </div>
-                        <div class="l-6-10">
-                            <h5 class="enjoy__txtWrapper__content">台灣擁有高山峽谷及四面環海地理特性，因此充滿各種自然景致等待人們發現，而各縣市有其特色文化與在地必嚐美食，無論想要來場山林陶冶身心之旅，抑或體驗歷史人文深度旅行，都能在台灣這片土地上踏尋。</h5>
-                        </div>
+                    <span class="footer__wrapper__txt">Copyright © 2021 TRAVEL. All rights reserved.</span>
+                    <div class="footer__wrapper__langs">
+                        <span class="footer__wrapper__langs__item footer__wrapper__langs__item--active">CH</span>
+                        <span class="footer__wrapper__langs__item">EN</span>
+                        <span class="footer__wrapper__langs__item">JA</span>
                     </div>
-                </div>
-                <div class="js-enjoy-carousel">
-                    <div class="carousel-cell">
-                        <div class="enjoy__img enjoy__img--01"></div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="enjoy__img enjoy__img--02"></div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="enjoy__img enjoy__img--03"></div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="enjoy__img enjoy__img--04"></div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="enjoy__img enjoy__img--05"></div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="enjoy__img enjoy__img--06"></div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="enjoy__img enjoy__img--07"></div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="enjoy__img enjoy__img--08"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="subscribe">
-                <div class="l-container">
-                    <div class="l-row">
-                        <div class="subscribe__img l-6-12"></div>
-                        <div class="l-1-12"></div>
-                        <div class="l-5-12">
-                            <div class="subscribe__txtWrapper">
-                                <h1 class="subscribe__txtWrapper__title">Subscribe</h1>
-                                <h1 class="subscribe__txtWrapper__subTitle">每個月來一場自在旅行</h1>
-                                <h5 class="subscribe__txtWrapper__content">如果您願意收到每月的旅遊資訊，一起感受台灣旅行的美好。</h5>
-                            </div>
-                            <div class="subscribe__inputWrapper">
-                                <input type="email" class="subscribe__inputWrapper__input" placeholder="youremail@example.com">
-                                <div class="subscribe__inputWrapper__img"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer class="footer l-container">
-            <div class="footer__iconbar">
-                <span class="footer__iconbar__txt">Follow us</span>
-                <div class="footer__iconbar__item footer__iconbar__item--meta"></div>
-                <div class="footer__iconbar__item footer__iconbar__item--ig"></div>
-                <div class="footer__iconbar__item footer__iconbar__item--yt"></div>
-            </div>
-            <span class="footer__txt">Copyright © 2021 TRAVEL. All rights reserved.</span>
-            <div class="footer__langs">
-                <span class="footer__langs__item footer__langs__item--active">CH</span>
-                <span class="footer__langs__item">EN</span>
-                <span class="footer__langs__item">JA</span>
             </div>
         </footer>
-        <script src="js/flickity.min.js"></script>
-        <script src="js/main.js"></script>
+        <!-- <script src="js/flickity.min.js"></script>
+        <script src="js/main.js"></script> -->
     </body>
 </html>

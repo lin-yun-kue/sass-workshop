@@ -2,54 +2,58 @@
 @use "../utils/mixin" as m;
 
 .footer {
-    background-color: c.$background-color;
+    background-color: c.$footer-background-color;
     padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &__iconbar {
+    &__wrapper {
         display: flex;
+        justify-content: space-between;
         align-items: center;
+        &__iconbar {
+            display: flex;
+            align-items: center;
+            &__txt {
+                margin-right: 20px;
+                font-size: 14px;
+            }
+            &__item {
+                width: 20px;
+                height: 20px;
+                &--meta {
+                    @include m.img-fill("../img/icon/meta.png");
+                    &:hover {
+                        background-image: url("../img/icon/meta--hover.png");
+                    }
+                }
+                &--ig {
+                    @include m.img-fill("../img/icon/ig.png");
+                    &:hover {
+                        background-image: url("../img/icon/ig--hover.png");
+                    }
+                }
+                &--yt {
+                    @include m.img-fill("../img/icon/yt.png");
+                    &:hover {
+                        background-image: url("../img/icon/yt--hover.png");
+                    }
+                }
+            }
+        }
         &__txt {
-            margin-right: 20px;
-            font-size: 14px;
+            color: c.$sub-text-color;
+            font-size: 12px;
         }
-        &__item {
-            width: 22px;
-            height: 22px;
-            &--meta {
-                @include m.img-fill("../img/icon/meta.png");
-                &:hover {
-                    background-image: url("../img/icon/meta--hover.png");
+        &__langs {
+            color: c.$sub-text-color;
+            font-size: 12px;
+            &__item {
+                margin-left: 20px;
+                &--active {
+                    color: c.$text-color;
                 }
-            }
-            &--ig {
-                @include m.img-fill("../img/icon/ig.png");
                 &:hover {
-                    background-image: url("../img/icon/ig--hover.png");
-                }
-            }
-            &--yt {
-                @include m.img-fill("../img/icon/yt.png");
-                &:hover {
-                    background-image: url("../img/icon/yt--hover.png");
+                    cursor: pointer;
                 }
             }
         }
-    }
-    &__txt {
-        color: c.$sub-text-color;
-        font-size: 12px;
-    }
-    &__langs {
-        color: c.$sub-text-color;
-        font-size: 12px;
-        &__item {
-            margin-left: 20px;
-            &--active {
-                color: c.$text-color;
-            }
-        }
-        
     }
 }

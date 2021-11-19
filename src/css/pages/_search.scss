@@ -1,0 +1,7 @@
+@use "../utils/variables" as v;
+
+.searchMain {
+    width: calc(100% - #{v.$sidebar-width});
+    height: 100%;
+    background-color: green;
+}
