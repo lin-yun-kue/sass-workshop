@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         pauseAutoPlayOnHover: true,
       });
     const enjoyFlkty = new Flickity('.js-enjoy-carousel', {
-        autoPlay: 2000,
+        autoPlay: 1000,
         prevNextButtons: false,
         wrapAround: true,
         pauseAutoPlayOnHover: true,
