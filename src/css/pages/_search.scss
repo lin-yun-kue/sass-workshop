@@ -6,15 +6,11 @@
 .searchMain {
     width: calc(100% - #{v.$sidebar-width});
     height: 100%;
-    position: relative;
 }
 
 .searchFilter {
     align-items: center;
-    position: absolute;
-    margin: unset;
-    padding: 24px 0;
-    background-color: white;
+    height: 10%;
     &__sortWrapper {
         padding-left: 30px;
         display: flex;
@@ -57,8 +53,7 @@
 }
 
 .itemList {
-    height: 100%;
-    padding-top: 10%;
+    height: 90%;
     overflow-y: auto;
     @include m.hide-scroll;
 }
