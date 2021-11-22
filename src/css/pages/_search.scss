@@ -1,7 +1,64 @@
 @use "../utils/variables" as v;
+@use "../utils/fonts" as f;
+@use "../utils/colors" as c;
+@use "../utils/mixin" as m;
 
 .searchMain {
     width: calc(100% - #{v.$sidebar-width});
     height: 100%;
-    background-color: green;
+    position: relative;
+}
+
+.searchFilter {
+    align-items: center;
+    position: absolute;
+    margin: unset;
+    padding: 24px 0;
+    background-color: white;
+    &__sortWrapper {
+        padding-left: 30px;
+        display: flex;
+        align-items: center;
+        &__txt {
+            font-weight: f.$font-weight-bolder;
+            margin-right: 20px;
+        }
+        &__switchWrapper {
+            padding: 8px 16px;
+            border: 1px solid #c4c4c4;
+            border-radius: 20px;
+            &__item {
+                border-bottom: 2px solid #c4c4c4;
+                margin-bottom: 5px;
+                padding-bottom: 5px;
+                display: flex;
+                align-items: center;
+                &:last-child {
+                    border-bottom: none;
+                    padding-bottom: unset;
+                    margin-bottom: unset;
+                }
+                &--active {
+                    color: c.$primary-color;
+                    &:after {
+                        content: "";
+                        display: block;
+                        width: 15px;
+                        height: 15px;
+                        @include m.img-fill("../img/icon/b-up.png");
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.itemList {
+    height: 100%;
+    padding-top: 10%;
+    overflow-y: auto;
+    @include m.hide-scroll;
 }
