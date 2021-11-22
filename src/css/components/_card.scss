@@ -1,0 +1,45 @@
+@use "../utils/colors" as c;
+@use "../utils/fonts" as f;
+@use "../utils/mixin" as m;
+
+.card{
+    background-color: c.$background-color;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    width: 252px;
+    &__img {
+        width: 250px;
+        height: 170px;
+    }
+    &__title {
+        font-weight: 500;
+        margin-top: 10px;
+        padding: 0 16px;
+        text-overflow: ellipsis;
+        overflow: hidden; 
+        white-space: nowrap;
+    }
+    &__detail {
+        padding: 8px 16px 18px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__icon {
+            width: 16px;
+            height: 16px;
+            @include m.img-fill("../img/icon/mappin.png")
+        }
+        &__txt {
+            font-size: 14px;
+            width: 80%;
+        }
+        &__like {
+            width: 16px;
+            height: 16px;
+            @include m.img-fill("../img/icon/like.png");
+            &--active {
+                background-image: url("../img/icon/like--fill.png");
+            }
+        }
+    }
+}

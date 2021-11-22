@@ -24,12 +24,10 @@
 .l-list {
     display: flex;
     flex-wrap: wrap;
-    overflow-y: hidden;
-    justify-content: space-between;
-    .l-list-item-3 {
-        margin-right: 1%;
-        width: 32.33%;
-        height: 500px;
+    justify-content: flex-start;
+    .l-list-item {
+        margin-right: 10px;
+        margin-bottom: 24px;
     }
 }
 

@@ -6,11 +6,13 @@
 .searchMain {
     width: calc(100% - #{v.$sidebar-width});
     height: 100%;
+    padding-left: 40px;
 }
 
 .searchFilter {
     align-items: center;
     height: 10%;
+    margin: unset;
     &__sortWrapper {
         padding-left: 30px;
         display: flex;
