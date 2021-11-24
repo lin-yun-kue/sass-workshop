@@ -4,9 +4,13 @@ This demo maily walk through how to use sass to develop css and how to manage sa
 
 ### Guidelines
 - Don't use ID as CSS selector
-- Define the JS hooks and don't select element by css class
-- Selector layer is better to lower than 4 layer in order to have efficiently rendering CSS
+- Don't mixup use CSS selector and JS selector and define js-hook for js selector.
+- Selector layer is better to lower than 4 layer in order to efficiently render.
 - Use BEM Naming Rule
+- OOCSS 
+  - Separate structure and skin.
+  - Separate container and content.
+- Only elements like picture or icon can set fix height.
 
 ### Methodology Reference
 - [SMACSS](http://smacss.com/)
