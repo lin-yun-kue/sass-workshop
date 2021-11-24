@@ -1,3 +1,4 @@
+// use image to replace text and it'll help improve SEO
 @mixin img-replace-text($url) {
     background-image: url($url);
     background-repeat: no-repeat;
@@ -6,23 +7,23 @@
     text-indent: 101%;
     white-space: nowrap;
 }
-
+// set background-image full element
 @mixin img-fill($url) {
     background-image: url($url);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-
 @mixin clear-float {
     overflow: hidden;
 }
-
 @mixin flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+// animation zoom in/out
+//
+//     >> $duration 
 @mixin img-zoom($duration, $scale) {
     transition: transform $duration;
     &:hover {

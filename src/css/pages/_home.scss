@@ -139,8 +139,8 @@
     padding: 140px 0;
     &__img {
         @include m.img-fill("../img/Subscribe.jpeg");
-        height: 300px;
         border-radius: v.$img-border-radius;
+        height: 100%;
     }
     &__txtWrapper {
         line-height: f.$line-height-lg;
@@ -155,7 +155,7 @@
         }
     }
     &__inputWrapper {
-        padding: 25px;
+        padding: 20px;
         border: 1px solid c.$sub-text-color;
         border-radius: v.$img-border-radius;
         margin-top: 25px;
