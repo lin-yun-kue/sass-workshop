@@ -2,11 +2,15 @@
 @use "../utils/fonts" as f;
 @use "../utils/colors" as c;
 @use "../utils/mixin" as m;
+@use "../utils/breakpoinst" as b;
 
 .searchMain {
     width: calc(100% - #{v.$sidebar-width});
     height: 100%;
     padding-left: 40px;
+    @include b.media-breakpoint-down(lg) {
+        padding-left: 10px;
+    }
 }
 
 .searchFilter {
@@ -55,6 +59,9 @@
                 }
             }
         }
+    }
+    @include b.media-breakpoint-down(lg) {
+        height: 10%;
     }
 }
 

@@ -8,6 +8,9 @@
     @include b.media-breakpoint-down(xxl) {
         width: 85%;
     }
+    @include b.media-breakpoint-down(lg) {
+        width: 95%;
+    }
 }
 .l-container-left {
     margin-left: 14%;
@@ -24,6 +27,8 @@
     width: 100%;
     display: flex;
     margin: 24 0;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .l-list {
     display: flex;
@@ -41,4 +46,16 @@
             width: 100% * math.div($i, $unit);
         } 
     };
+}
+
+@each $size, $value in v.$grid-breakpoints {
+    @media screen and (max-width: $value) {
+        @each $unit in v.$grid-divide-units {
+            @for $i from 1 through $unit { 
+                .l-#{$size}-#{$i}-#{$unit} {
+                    width: 100% * math.div($i, $unit);
+                } 
+            };
+        }
+    }
 }
