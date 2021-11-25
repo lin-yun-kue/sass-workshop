@@ -89,6 +89,12 @@
          }
     };
     @include b.media-breakpoint-down(xl) {
+        &__imgWrapper {
+            &__img {
+                width: 140px;
+                height: 210px;
+            }
+        }
         &__txtWrapper {
             line-height: f.$line-height-base;
             &__title {

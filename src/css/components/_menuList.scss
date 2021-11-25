@@ -10,11 +10,11 @@
     color: c.$text-color;
     font-size: f.$font-size-lg;
     &__item {
-        height: 60px;
         display: flex;
         align-items: center;
         border-bottom: 1px solid #c4c4c4;
         white-space: nowrap;
+        line-height: 3;
         &:hover {
             color: c.$primary-color;
         }
