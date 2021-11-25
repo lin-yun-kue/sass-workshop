@@ -1,4 +1,5 @@
 @use "../utils/colors" as c;
+@use "../utils/fonts" as f;
 
 .menuList {
     width: 100%;
@@ -7,6 +8,7 @@
     flex-wrap: nowrap;
     align-items: baseline;
     color: c.$text-color;
+    font-size: f.$font-size-lg;
     &__item {
         height: 60px;
         display: flex;

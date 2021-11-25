@@ -1,9 +1,13 @@
 @use "../utils/variables" as v;
 @use "sass:math";
+@use "../utils/breakpoinst" as b;
 
 .l-container {
-    width: 72%;
+    width: 70%;
     margin: 0 auto;
+    @include b.media-breakpoint-down(xxl) {
+        width: 85%;
+    }
 }
 .l-container-left {
     margin-left: 14%;

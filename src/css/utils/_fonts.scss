@@ -1,9 +1,14 @@
-$h1-font-size: 48px;
-$h2-font-size: 36px;
-$h3-font-size: 24px;
-$h4-font-size: 22px;
-$h5-font-size: 18px;
-$h6-font-size: 16px;
+// assume the browser default is '16px'
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * .875 !default;
+$font-size-lg:                $font-size-base * 1.25 !default;
+
+$h1-font-size: $font-size-base * 3; //48px;
+$h2-font-size: $font-size-base * 2.25; //36px
+$h3-font-size: $font-size-base * 1.5; //24px
+$h4-font-size: $font-size-base * 1.375; //22px
+$h5-font-size: $font-size-base * 1.125;//18
+$h6-font-size: $font-size-base;
 
 $font-sizes: (
   1: $h1-font-size,
@@ -15,7 +20,6 @@ $font-sizes: (
 ) !default;
 
 $caption-size: 16px;
-
 
 $font-weight-lighter:         200 !default;
 $font-weight-light:           300 !default;

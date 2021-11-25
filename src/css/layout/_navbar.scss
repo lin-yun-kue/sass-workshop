@@ -1,5 +1,6 @@
 @use "../utils/colors" as c;
 @use "../utils/mixin" as m;
+@use "../utils/breakpoinst" as b;
 
 .navbar {
     display: flex;
@@ -89,4 +90,7 @@
             padding-top: 12%;           
         }
     }
+    @include b.media-breakpoint-down(xxl) {
+        width: 50%;
+    }   
 }

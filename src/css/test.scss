@@ -1,0 +1,8 @@
+@use "./utils/breakpoinst" as b;
+
+.test {
+    width: 50%;
+    @include b.media-breakpoint-down(xl) {
+        width: 80%;
+    }
+}

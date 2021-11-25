@@ -2,6 +2,7 @@
 @use "../utils/colors" as c;
 @use "../utils/fonts" as f;
 @use "../utils/variables" as v;
+@use "../utils/breakpoinst" as b;
 
 .banner {
     position: relative;
@@ -45,11 +46,11 @@
         display: flex;
         align-items: flex-start;
         &__img {
-            display: inline-block;
             width: 200px;
             height: 300px;
             margin-left: 16px;
             border-radius: v.$img-border-radius;
+            flex-shrink: 0;
             &--01 {
                 @include m.img-fill("../img/index_explore/explore_01.jpeg")
             }
@@ -77,6 +78,24 @@
             writing-mode: vertical-rl;
             text-orientation: upright;
             margin-left: 4px;
+        }
+    }
+    @include b.media-breakpoint-down(xxl) {
+        &__imgWrapper {
+            &__img {
+                width: 160px;
+                height: 240px;
+            }
+         }
+    };
+    @include b.media-breakpoint-down(xl) {
+        &__txtWrapper {
+            line-height: f.$line-height-base;
+            &__title {
+            }
+            &__subTitle {
+
+            }
         }
     }
 }

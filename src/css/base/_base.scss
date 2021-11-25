@@ -1,6 +1,10 @@
 @use "../utils/fonts" as f; 
 @use "../utils/colors" as c;
 
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: f.$font-family;
     color: c.$text-color;
