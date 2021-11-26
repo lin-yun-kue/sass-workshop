@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const watch = require('gulp-watch');
+const map = require('gulp-sourcemaps');
 
 async function build() {
     compileScss();
@@ -9,8 +10,10 @@ async function build() {
 
 function compileScss() {
     gulp.src("src/**/*.scss")
+        .pipe(map.init())
         .pipe(sass().on('error', e => console.log(e)))
         // .pipe(sass({outputStyle: 'compressed'}).on('error', e => console.log(e)))
+        .pipe(map.write("."))
         .pipe(gulp.dest("build"))
 }
 
